@@ -2,7 +2,9 @@ import React , {useEffect} from 'react'
 import classes from "./Works.module.css"
 import { ScrollTrigger, CustomEase } from "gsap/all";
 import Project from './Project/Project';
+import Project2 from './Project/Project2';
 import gsap from "gsap";
+import Project3 from './Project/Project3';
 
 const Works = () => {
 
@@ -41,7 +43,8 @@ ease: "power4.out",
         </div>
         <div className={classes.projects}>
         <Project/>
-       
+        <Project2/>
+        <Project3/>
         </div>
         
 

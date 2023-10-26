@@ -6,7 +6,7 @@ import gsap from "gsap";
 
 
 
-const Project = () => {
+const Project2 = () => {
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -36,22 +36,22 @@ ease: "power4.out",
         <div className={classes.overlay}></div>
         <div className={classes.matter}>
           <div className={classes.title}>
-            <div className={classes.titleinner}>DOGGO</div>
+            <div className={classes.titleinner}>CHAT</div>
           </div>
-          <div className={classes.description}>Welcome to Doggo, a trusted companion in pet care services.
-Doggo dedicated to providing top-notch pet sitting, pet walking,
-and pet travel solutions for pet owners. It’s user-friendly website
-offers a seamless experience, connecting pet owners with experienced
-caregivers who ensure the well-being of your beloved furry friends.
-Whether you need a reliable pet sitter, a caring dog walker,
-or safe pet transport, we've got you covered.</div>
+          <div className={classes.description}>I have designed a stunning chat application UI in Figma,
+showcasing an exceptional dark mode theme.
+The overall aesthetic is pleasing, with a harmonious
+blend of colors, typography, and visual elements
+that exude sophistication. The dark mode not only
+enhances the visual appeal but also contributes to
+a more comfortable user experience by reducing eye strain..</div>
         </div>
             <div className={classes.image}>
-            <img src='Doggo.png' className={classes.imageinner} />
+            <img src='Chat.png' className={classes.imageinner} />
             </div>
         </div>
     </div>
   )
 }
 
-export default Project
+export default Project2

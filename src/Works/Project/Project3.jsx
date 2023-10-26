@@ -6,7 +6,7 @@ import gsap from "gsap";
 
 
 
-const Project = () => {
+const Project3 = () => {
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -36,22 +36,21 @@ ease: "power4.out",
         <div className={classes.overlay}></div>
         <div className={classes.matter}>
           <div className={classes.title}>
-            <div className={classes.titleinner}>DOGGO</div>
+            <div className={classes.titleinner}>NIKE</div>
           </div>
-          <div className={classes.description}>Welcome to Doggo, a trusted companion in pet care services.
-Doggo dedicated to providing top-notch pet sitting, pet walking,
-and pet travel solutions for pet owners. It’s user-friendly website
-offers a seamless experience, connecting pet owners with experienced
-caregivers who ensure the well-being of your beloved furry friends.
-Whether you need a reliable pet sitter, a caring dog walker,
-or safe pet transport, we've got you covered.</div>
+          <div className={classes.description}>The Minimalistic Nike Air Max Web UI is a sleek and
+contemporary web design concept, created to showcase
+the iconic Nike Air Max sneakers with a clean and user-friendly interface.
+This project places a strong emphasis on simplicity and aesthetics, using
+a minimalist approach to highlight the beauty and features
+of the Nike Air Max line.</div>
         </div>
             <div className={classes.image}>
-            <img src='Doggo.png' className={classes.imageinner} />
+            <img src='Air.png' className={classes.imageinner} />
             </div>
         </div>
     </div>
   )
 }
 
-export default Project
+export default Project3
