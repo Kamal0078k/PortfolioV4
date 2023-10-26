@@ -1,0 +1,99 @@
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 39.52rem;
+}
+
+.container{
+    width: 64.9rem;
+    background-color: black;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 4;
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(.48,.22,.16,.82);
+    
+}
+
+
+.container:hover 
+.overlay{
+    opacity: 0.4; 
+}
+.container:hover .matter{
+    transform: translateY(-300px);
+}
+
+.image{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.imageinner {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.matter{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding-top: 300px;
+    justify-content: end;
+    animation-fill-mode: both;
+    transition: transform 1s cubic-bezier(.48,.22,.16,.82);
+}
+
+.title {
+    color: white;
+    border-top: 4px white solid;
+    border-bottom: 4px white solid;
+    font-size: 6rem;
+    display: flex;
+    height: 14%;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.titleinner{
+    margin-left:1.5rem ;
+    height: 100%;
+    width: 100%;
+}
+
+.description{
+    margin-left: 2rem;
+    color: white;
+    width: 40rem;
+    margin-bottom: 30px;
+}
+
+
+
+@keyframes upmove {
+    from {
+      transform: translateY(250px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
