@@ -1,0 +1,41 @@
+.maincontainer{
+    background-color: black;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.quote{
+    font-size: 50px;
+    flex: 1;
+    margin-left: 40px;
+    margin-top: 20px;
+    height: 300px;
+}
+
+.second{
+    width: 85%;
+    display: flex;
+    border-left: 4px white solid;
+    border-right: 4px white solid;
+}
+
+.info{
+    width: 20%;
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.connect{
+    margin-bottom: 10px;
+}
+
+.connecter{
+    font-weight: 100;
+    margin-bottom: 4px;
+    cursor: pointer;
+}

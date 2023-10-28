@@ -6,7 +6,7 @@ import gsap from "gsap";
 
 
 
-const Project = () => {
+const Project4 = () => {
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -31,34 +31,21 @@ ease: "power4.out",
         );
       }, []);
   return (
-    
-    <div id='main'>
-    
-    <div className={classes.main} >
+    <div className={classes.main} id='main'>
         <div className={classes.container}>
         <div className={classes.overlay}></div>
         <div className={classes.matter}>
-        
           <div className={classes.title}>
-          
-            <div className={classes.titleinner}>DOGGO</div>
+            <div className={classes.titleinner}>ATG HOTEL</div>
           </div>
-          <div className={classes.description}>Welcome to Doggo, a trusted companion in pet care services.
-Doggo dedicated to providing top-notch pet sitting, pet walking,
-and pet travel solutions for pet owners. It’s user-friendly website
-offers a seamless experience, connecting pet owners with experienced
-caregivers who ensure the well-being of your beloved furry friends.
-Whether you need a reliable pet sitter, a caring dog walker,
-or safe pet transport, we've got you covered.</div>
+          <div className={classes.description}>This case study about the hotel booking app is quite simple and a fascinating task. This app is for customers who want to book hotels in their specific areas by knowing each and every detail about the hotel.</div>
         </div>
             <div className={classes.image}>
-            <img src='Doggo.png' className={classes.imageinner} />
+            <img src='Hotel.png' className={classes.imageinner} />
             </div>
         </div>
-    </div></div>
-    
-    
+    </div>
   )
 }
 
-export default Project
+export default Project4

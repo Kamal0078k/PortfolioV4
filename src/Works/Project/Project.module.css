@@ -70,6 +70,7 @@
     font-size: 6rem;
     display: flex;
     height: 14%;
+    padding-top: 20px;
     /* justify-content: center; */
     align-items: center;
 }
@@ -77,6 +78,7 @@
 .titleinner{
     margin-left:1.5rem ;
     height: 100%;
+
     width: 100%;
 }
 
