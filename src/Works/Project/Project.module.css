@@ -24,7 +24,7 @@
     z-index: 4;
     opacity: 0;
     transition: opacity 1s cubic-bezier(.48,.22,.16,.82);
-    
+
 }
 
 
@@ -32,6 +32,22 @@
 .overlay{
     opacity: 0.4; 
 }
+
+.container:hover
+.imageinner{
+    scale: 1.05;
+    filter: blur(10px);
+}
+
+
+.imageinner {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+    transition: all 0.7s cubic-bezier(.48,.22,.16,.82);
+}
+
+
 .container:hover .matter{
     transform: translateY(-300px);
 }
@@ -43,24 +59,20 @@
     height: 100%;
 }
 
-.imageinner {
-    width: 100%;
-    object-fit: contain;
-    height: 100%;
-}
 
 .matter{
     position: absolute;
     width: 100%;
     z-index: 10;
     height: 100%;
+    
     display: flex;
     flex-direction: column;
     gap:10px;
     padding-top: 300px;
     justify-content: end;
     animation-fill-mode: both;
-    transition: transform 1s cubic-bezier(.48,.22,.16,.82);
+    transition: transform 0.5s cubic-bezier(.48,.22,.16,.82);
 }
 
 .title {
@@ -86,6 +98,8 @@
     margin-left: 2rem;
     color: white;
     width: 40rem;
+    font-weight: 500;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 

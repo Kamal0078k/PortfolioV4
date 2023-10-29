@@ -72,9 +72,9 @@
 }
 
 .line {
-  font-size: 9rem;
+  font-size: 8rem;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  padding-top: 1rem;
+  padding-top: 2rem;
   height: 8rem;
   border-top: 4px solid #1d1d1d;
   border-bottom: 4px solid #1d1d1d;
@@ -165,6 +165,7 @@
 
 .mainquote {
   display: flex;
+  margin-top: 80px;
   text-align: center;
   font-weight: 700;
   align-items: center;

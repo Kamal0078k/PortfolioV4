@@ -1,5 +1,75 @@
-.container {
-  background-color: #edeae7;
+.total {
+  background-color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
-  height: 100vh;
+  position: relative;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.options{
+  width: 400px;
+  position: fixed;
+  z-index: 110;
+  bottom: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  gap: 4px;
+  /* padding-bottom:10px ; */
+}
+
+.option{
+  cursor: pointer;
+  width: 125px;
+  padding-top:15px ;
+  text-align: center;
+  padding-bottom:15px ;
+  font-weight: 700;
+  transition: all 0.5s cubic-bezier(0,.81,.74,1.02);
+}
+
+.home{
+  width: 20%;
+  height: 90%;
+  color: rgb(0, 0, 0); 
+  mix-blend-mode: normal;
+  background-color: #ffffff;
+}
+
+.menu{
+  width: 392px;
+  position: fixed;
+  z-index: 100;
+  bottom: 30px;
+  height: 54px;
+
+  background-color: #fff; 
+   mix-blend-mode: difference;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.options , .menu{
+  animation: upmove 1.0s cubic-bezier(0,.81,.74,1.02);
+  animation-delay: 2500ms;
+  animation-fill-mode: both;
+}
+
+
+
+
+@keyframes upmove {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
