@@ -3,6 +3,7 @@ import Hero from "./Hero/Hero";
 import Footer from "./Footer/Footer";
 import Works from "./Works/Works";
 import { useRef, useState,useEffect } from "react";
+import { Component } from "react";
 
 function App() {
   const menuRef = useRef(null)
@@ -19,13 +20,17 @@ function App() {
     tccolor : "white"
   });
   const handleScroll = () => {
-    const scrollY = window.scrollY;
+    const homeheight = homeRef.current.clientHeight
+    
+    const workheight = worksRef.current.clientHeight
 
+    const scrollY = window.scrollY;
+    console.log(scrollY)
     // Define the scroll position and corresponding background colors
     const scrollPositions = [
       { position: 0, Homecolor: 'white' , worksColor: 'black', Contactcolor: 'black' , thcolor : "black" , twcolor: "white" , tccolor: "white" }, // Set the initial background color
-      { position: 720, Homecolor: 'black' , worksColor: 'white', Contactcolor: 'black' , thcolor : "white" , twcolor: "black" , tccolor: "white"},    // Change background color at scroll position 300
-      { position: 4000, Homecolor: 'black' , worksColor: 'black', Contactcolor: 'white', thcolor : "white" , twcolor: "white" , tccolor: "black"},
+      { position: homeheight - 10, Homecolor : 'black' , worksColor: 'white', Contactcolor: 'black' , thcolor : "white" , twcolor: "black" , tccolor: "white"},    // Change background color at scroll position 300
+      { position:   workheight, Homecolor: 'black' , worksColor: 'black', Contactcolor: 'white', thcolor : "white" , twcolor: "white" , tccolor: "black"},
       // Add more scroll positions and colors as needed
     ];
 
@@ -43,9 +48,11 @@ function App() {
     }
   };
 
+  
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-
+  
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -63,6 +70,11 @@ function App() {
   const home = () =>{
     homeRef.current?.scrollIntoView({ behavior: "smooth" });
   }
+
+
+  const activecomp = () =>{
+    console.log("HOme")
+  }
   return (
     <div className={classes.total}>
     <div className={classes.menu}  >
@@ -73,11 +85,11 @@ function App() {
       <div className={classes.option} style={{"background-color" : backgroundColor.ContactColor, "color" : backgroundColor.tccolor}} onClick={contacts}>CONTACT</div>
     </div>
     <div  className={classes.container}>
-    <div ref={homeRef}>
+    <div  ref={homeRef}>
     <Hero />
     </div>
     
-    <div ref={worksRef}>
+    <div ref={worksRef} id="somek">
     <Works/>
     </div>
     <div ref={ContactRef}>
