@@ -89,7 +89,7 @@ function App() {
             </div>
             <div className={classes.buckle}>
               <div className={classes.buckleinner}>
-                <div className={classes.buckleinnerinner}>BUCKLE UP!</div>
+                <div className={classes.buckleinnerinner}>WELCOME</div>
               </div>
             </div>
             
