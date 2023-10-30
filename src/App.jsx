@@ -3,13 +3,16 @@ import Hero from "./Hero/Hero";
 import Footer from "./Footer/Footer";
 import Works from "./Works/Works";
 import { useRef, useState,useEffect } from "react";
-import { Component } from "react";
+import {useScrollDirection} from "./useScrollDirection"
 
 function App() {
   const menuRef = useRef(null)
   const worksRef = useRef(null)
   const ContactRef = useRef(null)
   const homeRef = useRef(null)
+  const scrollDirection = useScrollDirection()
+
+
 
   const [backgroundColor, setBackgroundColor] = useState({
     Homecolor : "white",
@@ -25,7 +28,7 @@ function App() {
     const workheight = worksRef.current.clientHeight
 
     const scrollY = window.scrollY;
-    console.log(scrollY)
+
     // Define the scroll position and corresponding background colors
     const scrollPositions = [
       { position: 0, Homecolor: 'white' , worksColor: 'black', Contactcolor: 'black' , thcolor : "black" , twcolor: "white" , tccolor: "white" }, // Set the initial background color
@@ -72,30 +75,44 @@ function App() {
   }
 
 
-  const activecomp = () =>{
-    console.log("HOme")
-  }
   return (
     <div className={classes.total}>
-    <div className={classes.menu}  >
-    </div>
-    <div className={classes.options} ref={menuRef}>
-      <div className={classes.option} style={{"background-color" : backgroundColor.Homecolor , "color" : backgroundColor.thcolor}} onClick={home} >HOME</div>
-      <div className={classes.option}  style={{"background-color" : backgroundColor.worksColor, "color" : backgroundColor.twcolor}} onClick={works}>WORKS</div>
-      <div className={classes.option} style={{"background-color" : backgroundColor.ContactColor, "color" : backgroundColor.tccolor}} onClick={contacts}>CONTACT</div>
-    </div>
-    <div  className={classes.container}>
-    <div  ref={homeRef}>
-    <Hero />
-    </div>
-    
-    <div ref={worksRef} id="somek">
-    <Works/>
-    </div>
-    <div ref={ContactRef}>
-    <Footer/>
-    </div>
-    </div>
+        <div className={classes.intro}>
+          <div className={classes.introinner} >
+          
+            <div className={classes.parts}>
+              <div className={classes.part1}></div>
+              <div className={classes.part2}></div>
+              <div className={classes.part3}></div>
+              <div className={classes.part4}></div>
+              <div className={classes.part5}></div>
+            </div>
+            <div className={classes.buckle}>
+              <div className={classes.buckleinner}>
+                <div className={classes.buckleinnerinner}>BUCKLE UP!</div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div className={classes.menu}   style={{"bottom" : scrollDirection == "down" ? "-60px" : "30px"}}>
+        </div>
+        <div className={classes.options} style={{"bottom" : scrollDirection == "down" ? "-60px" : "34px"}} ref={menuRef}>
+          <div className={classes.option} style={{"background-color" : backgroundColor.Homecolor , "color" : backgroundColor.thcolor}} onClick={home} >HOME</div>
+          <div className={classes.option}  style={{"background-color" : backgroundColor.worksColor, "color" : backgroundColor.twcolor}} onClick={works}>WORKS</div>
+          <div className={classes.option} style={{"background-color" : backgroundColor.ContactColor, "color" : backgroundColor.tccolor}} onClick={contacts}>CONTACT</div>
+        </div>
+      <div  className={classes.container}>
+        <div  ref={homeRef}>
+        <Hero />
+        </div>
+        <div ref={worksRef} id="somek">
+        <Works/>
+        </div>
+        <div ref={ContactRef}>
+        <Footer/>
+        </div>
+      </div>
       
     </div>
   );

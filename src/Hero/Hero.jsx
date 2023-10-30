@@ -9,16 +9,16 @@ const Hero = () => {
       </div>
       <div className={classes.front}>
         <div className={classes.heading}>
-          <div className={classes.kamal}>KAMAL</div>
+          <div className={classes.kamal}>PORTFOLIO</div>
           <div className={classes.corners}>
             <img src="corner.svg" className={classes.corner} />
             <img src="corner.svg" className={classes.cornert} />
           </div>
         </div>
         <div className={classes.line}>
-          <div className={classes.lineinner}>BORN</div>
-          <div className={classes.lineinner1}>TO</div>
-          <div className={classes.lineinner2}>DESIGN</div>
+          <div className={classes.lineinner}>ARUKALA</div>
+          <div className={classes.lineinner1}>SAI</div>
+          <div className={classes.lineinner2}>KAMAL</div>
         </div>
         <div className={classes.skillsouter}>
         <ul className={classes.skills}>
@@ -38,7 +38,7 @@ const Hero = () => {
         
         <div className={classes.quote}>
         <div className={classes.quoteinner}>
-        A MIND WILLING TO CREATE STUNNING VISUALS
+        Hi! I design and develope websites using Figma and ReactJS 
         </div>
           
         </div>

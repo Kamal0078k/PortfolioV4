@@ -72,7 +72,7 @@
 }
 
 .line {
-  font-size: 8rem;
+  font-size: 6.5rem;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   padding-top: 2rem;
   height: 8rem;
@@ -81,7 +81,7 @@
   display: flex;
   justify-content: center;
   gap:20px;
-  animation: scaleX 1000ms cubic-bezier(0,.81,.74,1.02);
+  animation: scaleX 1000ms cubic-bezier(0.67, 0.09, 0, 1.16);
   animation-delay: 650ms;
   animation-fill-mode: both;
 }
@@ -98,25 +98,25 @@
 }
 
 .lineinner{
-  animation: upmove 1.0s cubic-bezier(0,.81,.74,1.02);
+  animation: upmove 1.0s cubic-bezier(0.67, 0.09, 0, 1.16);
   animation-delay: 1600ms;
   animation-fill-mode: both;
 }
 
 .lineinner1{
-  animation: upmove 1.0s cubic-bezier(0,.81,.74,1.02);
+  animation: upmove 1.0s cubic-bezier(0.67, 0.09, 0, 1.16);
   animation-delay: 1750ms;
   animation-fill-mode: both;
 }
 
 .lineinner2{
-  animation: upmove 1.0s cubic-bezier(0,.81,.74,1.02);
+  animation: upmove 1.0s cubic-bezier(0.67, 0.09, 0, 1.16);
   animation-delay: 1850ms;
   animation-fill-mode: both;
 }
 
 .quoteinner{
-  animation: upmove 1.0s cubic-bezier(0,.81,.74,1.02);
+  animation: upmove 1.0s cubic-bezier(0.67, 0.09, 0, 1.16);
   animation-delay: 2000ms;
   animation-fill-mode: both;
 }
@@ -136,7 +136,7 @@
   list-style-type: square;
   margin-left: 7.5%;
   font-size: 1.2rem;
-  animation: upmove 1.5s cubic-bezier(0,.81,.74,1.02);
+  animation: upmove 1.5s cubic-bezier(0.67, 0.09, 0, 1.16);
   animation-delay: 1500ms;
   animation-fill-mode: both;
 }
@@ -148,7 +148,7 @@
 }
 
 .mainquoteinner{
-  animation: upmove 1.5s cubic-bezier(0,.81,.74,1.02);
+  animation: upmove 1.5s cubic-bezier(0.67, 0.09, 0, 1.16);
   animation-delay: 2000ms;
   animation-fill-mode: both;
 }

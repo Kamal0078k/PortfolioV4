@@ -11,6 +11,7 @@ const Footer = () => {
         <div className={classes.connecter} >LinkedIn</div>
         <div className={classes.connecter}>Instagram</div>
         <div className={classes.connecter}>Github</div>
+        <div className={classes.connecter}>Resume</div>
       </div>
       <div className={classes.info}>
         <div className={classes.connect}>Contact</div>

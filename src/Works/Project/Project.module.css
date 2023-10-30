@@ -1,6 +1,7 @@
 .main{
     width: 100%;
     display: flex;
+    
     justify-content: center;
     align-items: center;
     height: 39.52rem;
@@ -23,7 +24,7 @@
     background-color: black;
     z-index: 4;
     opacity: 0;
-    transition: opacity 1s cubic-bezier(.48,.22,.16,.82);
+    transition: opacity 1s cubic-bezier(0.67, 0.09, 0, 1.16);
 
 }
 
@@ -44,7 +45,7 @@
     width: 100%;
     object-fit: contain;
     height: 100%;
-    transition: all 0.7s cubic-bezier(.48,.22,.16,.82);
+    transition: all 0.7s cubic-bezier(0.67, 0.09, 0, 1.16);
 }
 
 
@@ -72,7 +73,7 @@
     padding-top: 300px;
     justify-content: end;
     animation-fill-mode: both;
-    transition: transform 0.5s cubic-bezier(.48,.22,.16,.82);
+    transition: transform 0.5s cubic-bezier(0.67, 0.09, 0, 1.16);
 }
 
 .title {

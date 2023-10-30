@@ -47,27 +47,27 @@ ease: "power4.out",
         <div className={classes.projects}>
           <div className={classes.project}>
           <div className={classes.work}>
-          <div>
-          <div style={{"margin-left":"11%" , "margin-bottom": "1%"}}>UI/UX</div>
-            <Project/>
-          </div>
-          <div>
-          <div style={{"margin-left":"11%" , "margin-bottom": "1%"}}>UI/UX</div>
-            <Project3/>
-          </div>
-          <div>
-          <div style={{"margin-left":"11%" , "margin-bottom": "1%"}}>UI/UX</div>
-            <Project2/>
-          </div>
-          <div>
-          <div style={{"margin-left":"11%" , "margin-bottom": "1%"}}>UI/UX</div>
-            <Project4/>
-          </div>
-          <div>
-          <div style={{"margin-left":"11%" , "margin-bottom": "1%"}}>React</div>
-            <Project5/>
-          </div>
-          </div>
+            <div>
+            <div style={{"margin-left":"11%" , "margin-bottom": "1%"}}>UI/UX</div>
+              <Project/>
+            </div>
+            <div>
+            <div style={{"margin-left":"11%" , "margin-bottom": "1%"}}>UI/UX</div>
+              <Project3/>
+            </div>
+            <div>
+            <div style={{"margin-left":"11%" , "margin-bottom": "1%"}}>UI/UX</div>
+              <Project2/>
+            </div>
+            <div>
+            <div style={{"margin-left":"11%" , "margin-bottom": "1%"}}>UI/UX</div>
+              <Project4/>
+            </div>
+            <div>
+            <div style={{"margin-left":"11%" , "margin-bottom": "1%"}}>React</div>
+              <Project5/>
+            </div>
+            </div>
           </div>
         </div>
     </div>

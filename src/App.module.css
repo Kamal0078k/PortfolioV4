@@ -8,6 +8,19 @@
   align-items: center;
 }
 
+.intro{
+  width: 100vw;
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+  height: 100vh;
+  animation: introhide 100ms ease-in;
+  animation-delay:2500ms ;
+  animation-fill-mode: both;
+  
+  /* background-color: #1d1d1d;  */
+}
+
 .options{
   width: 400px;
   position: fixed;
@@ -56,9 +69,132 @@
 }
 
 .options , .menu{
-  animation: upmove 1.0s cubic-bezier(0,.81,.74,1.02);
+  animation: upmove 1.0s cubic-bezier(0.67, 0.09, 0, 1.16);
   animation-delay: 2500ms;
   animation-fill-mode: both;
+  transition: all 0.5s cubic-bezier(0.67, 0.09, 0, 1.16);
+}
+
+.introinner{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  /* animation: introhide 0.5s cubic-bezier(0,.81,.74,1.02);
+  animation-delay: 2000ms;
+  animation-fill-mode: both; */
+}
+
+.parts{
+  width: 100vw;
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  
+}
+
+.part1,.part2,.part3,.part4,.part5{
+  height: 100vh;
+  width: 20%;
+  background-color: hsl(0, 0%, 11%);
+  animation: upmove2 0.5s cubic-bezier(0.67, 0.09, 0, 1.16);
+  animation-delay: 1500ms;
+  animation-fill-mode: both;
+}
+
+.part2{
+  animation: upmove2 0.5s cubic-bezier(0.67, 0.09, 0, 1.16);
+  animation-delay: 1650ms;
+  animation-fill-mode: both;
+}
+
+.part3{
+  animation: upmove2 0.5s cubic-bezier(0.67, 0.09, 0, 1.16);
+  animation-delay: 1800ms;
+  animation-fill-mode: both;
+}
+.part4{
+  animation: upmove2 0.5s cubic-bezier(0.67, 0.09, 0, 1.16);
+  animation-delay: 1750ms;
+  animation-fill-mode: both;
+}
+.part5{
+  animation: upmove2 0.5s cubic-bezier(0.67, 0.09, 0, 1.16);
+  animation-delay: 1700ms;
+  animation-fill-mode: both;
+}
+
+.buckle{
+  position: fixed;
+  color: white;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  animation: upmove2,opa 0.5s cubic-bezier(0,.81,.74,1.02);
+  animation-delay: 2000ms;
+  animation-fill-mode: both;
+  
+}
+
+.buckleinner{
+  border-top: 2px white solid;
+  border-bottom: 2px white solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  justify-content: center;
+  align-items: center;
+}
+
+.buckleinnerinner{
+  animation: up 0.5s cubic-bezier(0.67, 0.09, 0, 1.16);
+  animation-delay: 100ms;
+  animation-fill-mode: both;
+}
+
+@keyframes upmove2{
+  0%{
+    transform: translateY(0);
+    
+  }
+  100%{
+    transform: translateY(-100vh);
+    
+  }
+}
+
+@keyframes opa{
+  0%{
+    opacity: 1;
+    
+  }
+  100%{
+    opacity: 0;
+    
+  }
+}
+
+@keyframes introhide{
+  to{
+    z-index: -100;
+    display: none;
+    transform: translateY(-100vh);
+  }
+}
+
+
+
+@keyframes up {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 
