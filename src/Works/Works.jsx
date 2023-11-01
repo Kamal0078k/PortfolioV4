@@ -52,7 +52,7 @@ ease: "power4.out",
             </div>
             <div>
             <div style={{"margin-left":"11%" , "margin-bottom": "1%"}}>UI/UX</div>
-            <a rel="noreferrer" href='https://www.figma.com/file/nvfystouNfkpTlCdqrQl2o/Untitled?type=design&node-id=118%3A661&mode=design&t=Q4iAhNhq1X4FiZ2w-1' target='_blank'><Project3/></a>
+            <a rel="noreferrer" href='https://www.figma.com/file/nvfystouNfkpTlCdqrQl2o/Untitled?type=design&node-id=0-1&mode=design&t=xg7uPQJDbPEr225i-0' target='_blank'><Project3/></a>
             </div>
             <div>
             <div style={{"margin-left":"11%" , "margin-bottom": "1%"}}>UI/UX</div>
