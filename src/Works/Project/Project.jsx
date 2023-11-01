@@ -7,29 +7,6 @@ import gsap from "gsap";
 
 
 const Project = () => {
-
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.registerPlugin(CustomEase);
-        gsap.fromTo(
-          "#main",
-          {
-            scale: 0.4,
-          },
-          {
-            scale: 1,
-            
-ease: "power4.out",
-    
-            scrollTrigger: {
-              trigger: "#main",
-              start: "top 100%",
-              end: "bottom 50%%",
-              scrub: true,
-            },
-          }
-        );
-      }, []);
   return (
     
     <div id='main'>

@@ -26,9 +26,7 @@ ease: "power4.out",
     
             scrollTrigger: {
               trigger: "#inner",
-              start: "top 90%",
-              end: "bottom 50%%",
-              scrub: true,
+              start: "top 100%",
             },
           }
         );
